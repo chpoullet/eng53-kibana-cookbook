@@ -14,3 +14,12 @@ end
 describe port(80), :skip do
   it { should_not be_listening }
 end
+
+describe package('kibana') do
+  it { should be_installed }
+end
+
+describe service "kibana" do
+  it { should be_running }
+  it { should be_enabled }
+end
