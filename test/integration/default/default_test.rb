@@ -19,6 +19,10 @@ describe package('kibana') do
   it { should be_installed }
 end
 
+describe package('openjdk-8-jdk') do
+  it { should be_installed }
+end
+
 describe service "kibana" do
   it { should be_running }
   it { should be_enabled }
