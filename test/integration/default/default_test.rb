@@ -23,3 +23,7 @@ describe service "kibana" do
   it { should be_running }
   it { should be_enabled }
 end
+
+describe package('apt-transport-https') do
+  it { should be_installed }
+end
