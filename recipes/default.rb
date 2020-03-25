@@ -14,6 +14,8 @@ apt_update "update" do
 end
 
 package "apt-transport-https"
+package "openjdk-8-jdk"
+
 
 execute "add key" do
   command 'wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -'
