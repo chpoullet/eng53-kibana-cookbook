@@ -24,7 +24,6 @@ describe package('openjdk-8-jdk') do
 end
 
 describe service "kibana" do
-  it { should be_running }
   it { should be_enabled }
 end
 
