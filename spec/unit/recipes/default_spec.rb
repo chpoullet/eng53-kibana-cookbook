@@ -10,7 +10,6 @@ describe 'kibana_cookbook::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
-  end
 
     it 'should update source list' do
       expect(chef_run).to update_apt_update('update_sources')
@@ -26,4 +25,3 @@ describe 'kibana_cookbook::default' do
     end
   end
 end
-
